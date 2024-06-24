@@ -1,0 +1,20 @@
+1.Open index.js file and enter your Mysql password there
+2.Execute following statement one by one using keyboard cursor, in your MySQL workbench or MySQL terminal.
+
+CREATE DATABASE BlogDB;
+
+USE BlogDB;
+
+CREATE TABLE user
+(id VARCHAR(50) PRIMARY KEY,
+username VARCHAR(25) UNIQUE,
+email VARCHAR(50) UNIQUE,
+password VARCHAR(25) UNIQUE);
+
+CREATE TABLE posts(
+id VARCHAR(50) PRIMARY KEY,
+content VARCHAR(400),
+heading VARCHAR(50),
+user_id VARCHAR(50),
+FOREIGN KEY (user_id) REFERENCES user(id)
+);

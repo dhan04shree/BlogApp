@@ -1,0 +1,43 @@
+<%-include("includes/head.ejs");%>
+    <nav class="navbar">
+        <div class="nav">
+            <h1>BlogApp</h1>
+        </div>
+        <div class="nav">
+            <a href="http://localhost:8080/">Home</a>
+            <a href="http://localhost:8080/register">Register</a>
+            <form method="get" action="/signin/create/1234"><button>Create your blog</button></form>
+          
+        </div>
+    </nav>
+    <div class="homesec1">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, doloribus.</p>
+        <form  method="get" action="/signin/create/1234"><button class="sec1btn">Create your blog</button></form>
+    </div>
+    <h1>ARTICLES</h1>
+    <%for(user of users){%>
+    <div class="showblog">
+            <h1><%=user.heading%></h1>
+            <p><%=user.content%></p>
+            <form  method="get" action="/signin/edit/<%=user.user_id%>"><button class="editbtn">Edit post</button></form>
+        <form method="get" action="/signin/delete/<%=user.user_id%>"><button class="editbtn">Delete post</button></form>
+    </div>
+    <%}%>
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+
+    </div>
+    <footer>
+        <div class="terms"><b>Support</b><br><br>Help Center<br><br><br> Terms of Use</div>
+        <div class="policy"><b>Community</b><br><br>BlogApp <br><br><br>Privacy Policy</div>
+        <div class="developer"><b>Developer</b><br><br> BlogApp <br><br><br> &copy;2024 BlogApp</div>
+    </footer>
+
+
+</body>
+</html>

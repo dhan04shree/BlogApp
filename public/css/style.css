@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#cfffff;
+    text-align: center;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    height:15vh;
+    display: flex;
+    align-items: center;
+    background-color:#00cccc;
+    gap: 260px;
+}
+.navbar h1{
+    display: inline-block;
+    padding-left: 100px;
+}
+.nav{
+    width: 40%;
+    display:flex;
+    align-items: center;
+    gap: 100px;
+}
+nav a{
+    text-decoration:none;
+    color:#000;
+    font-size: 19px;
+}
+.box{
+    background-color:#9de2e2;
+    border:1px solid #72a2a2;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top:160px;
+    border-radius: 10px;
+    text-align: center;
+}
+h2,.box p,input,.signupbtn,textarea{
+    width: 80%;
+    height: 30px;
+    margin: 5px 35px;
+    font-size: 17px;
+    text-align:center;
+}
+.signupbtn{background-color:darkslategray;
+    color: #ffffffeb;
+    cursor: pointer;}
+h2{
+    padding-top:50px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.box a{
+    text-decoration: none;
+}
+.box a:hover{
+    text-decoration: underline;
+}
+.homesec1{
+    padding-top: 250px;
+    line-height: 50px;
+    margin-bottom: 200px;
+}
+.sec1btn{
+    border-style: none; 
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3e6969;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+.sec1btn:hover{
+    background-color:darkslategrey;
+}
+.editbtn:hover{
+    background-color: darkslategray;
+    color: white;
+}
+.editbtn,nav button{
+    border-radius: 5px;
+    border: 1px solid darkslategray;
+    font-size: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+.showblog{
+    text-align: start;
+    background-color:#9de2e2;
+    margin: 60px 120px;
+    border:1px solid #72a2a2;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.showblog p{
+    padding: 30px 0 50px 0;
+    font-size: 20px;
+    text-align:justify;
+}
+.showblog form{
+    display:inline;
+}
+footer{
+    height: 200px;
+    background-color:#333;
+    color: #fff;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    text-align: left;
+}
+.terms,.policy,.developer{
+    display: inline-block;
+}
+.contact h1{margin-top: 200px;}
+.contact i{
+    font-size:29px;
+    margin: 30px 30px 100px 30px;
+}
+
+
+
+
