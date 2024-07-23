@@ -17,36 +17,35 @@ Database - MySQL
 ## Screenshots
 
 HOMEPAGE :
-![home1](https://github.com/dhan04shree/Blog-Website/assets/134943499/86de9dd8-6b30-4513-8d86-b0628302aca0)
 
-First User should be register themselve
+![Screenshot (74)](https://github.com/user-attachments/assets/7e2189ce-850f-4766-a187-5e8b9f8ed371)
 
-![homepage2](https://github.com/dhan04shree/Blog-Website/assets/134943499/6016e200-23df-4a6d-bb4e-b3cbe5567a55)
+First, users need to register themselves. that data stores in "user" table of database
 
-![homepage3](https://github.com/dhan04shree/Blog-Website/assets/134943499/93a07007-ff9b-4880-a1e2-b1842eb5b28d)
+![Screenshot (75)](https://github.com/user-attachments/assets/38938331-864a-4f94-a192-fa536aefe164)
 
-Signup details store in "user" table of database
+![Screenshot (76)](https://github.com/user-attachments/assets/609c8320-08e2-4e97-8279-0705f697959d)
+
+![Screenshot (77)](https://github.com/user-attachments/assets/8a9e9611-8804-4d37-b408-66d77e66b37c)
 
 LOGIN:
 
-![login](https://github.com/dhan04shree/Blog-Website/assets/134943499/baf17dc2-c816-4d06-a851-b2752d133827)
+![23 07 2024_20 11 51_REC](https://github.com/user-attachments/assets/6331d82c-1d95-448f-94bc-d02dcd46453b)
 
-Before post Edit ,Create and Delete ,login details of user is verified.
+Before post edit and delete ,login details of user is verified.
 
-![changes](https://github.com/dhan04shree/Blog-Website/assets/134943499/28727f31-45d0-40d4-9f18-795f616527ba)
+![23 07 2024_20 00 39_REC](https://github.com/user-attachments/assets/56b3f4ae-2be1-46f6-82c0-81dee9d5d95e)
 
 Incorrect email or password
+![23 07 2024_20 01 21_REC](https://github.com/user-attachments/assets/8ee939d8-584d-4e6f-85ab-147a670d3edd)
 
-![wrongdetails](https://github.com/dhan04shree/Blog-Website/assets/134943499/b7516ff0-52c6-437c-84eb-395d3c4c2512)
-
-Post data store in "posts" table in database
-
+Post data store in "posts" table of database
 
 ![create](https://github.com/dhan04shree/Blog-Website/assets/134943499/42f45c7c-d6f6-4298-8c07-ecc4609d9ee4)
 
 ![update](https://github.com/dhan04shree/Blog-Website/assets/134943499/cb550843-8462-455b-9802-f084232bcf3b)
 
-![delete](https://github.com/dhan04shree/Blog-Website/assets/134943499/f364f119-2a43-4319-a0d8-5e59af9fd4b7)
+![23 07 2024_19 53 47_REC](https://github.com/user-attachments/assets/feaad1b7-78a1-44a4-bdd5-c3faaf523b7e)
 
 
 ## Installation
@@ -86,13 +85,13 @@ npm i method-override
 ```
 5.Initialize the database
 
-Open initializeDB.txt file and follow the instructions
+Open schema.txt file and follow the instructions
 
-6.Run app
+6.Start the server
 ```bash
 node index.js
 ```
-7.Open browser and type
+7.Open your browser and make the request
 ```bash
 localhost:8080/
 ```
