@@ -7,21 +7,24 @@
             <a href="http://localhost:8080/">Home</a>
             <a href="http://localhost:8080/register">Register</a>
             <form method="get" action="/signin/create/1234"><button>Create your blog</button></form>
-          
         </div>
     </nav>
     <div class="homesec1">
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, doloribus.</p>
+        <h1>Explore, Engage and Inspired!</h1>
+        <p>Welcome to BlogApp! Discover stories ,insights and inspiration here! </p>
         <form  method="get" action="/signin/create/1234"><button class="sec1btn">Create your blog</button></form>
     </div>
     <h1>ARTICLES</h1>
-    <%for(user of users){%>
-    <div class="showblog">
-            <h1><%=user.heading%></h1>
-            <p><%=user.content%></p>
-            <form  method="get" action="/signin/edit/<%=user.user_id%>"><button class="editbtn">Edit post</button></form>
-        <form method="get" action="/signin/delete/<%=user.user_id%>"><button class="editbtn">Delete post</button></form>
+    <%for(post of posts){%>
+    <div class="showblog"><br>
+        <%for(user of users){%>
+           <h3><%= user.id == post.user_id ? `@${user.username}`: "" %></h3>    
+        <%}%>
+        <br><br>
+            <h1><%=post.heading%></h1>
+            <p><%=post.content%></p>
+            <form  method="get" action="/signin/edit/<%=post.user_id%>"><button class="postbtn">Edit post</button></form>
+        <form method="get" action="/signin/delete/<%=post.user_id%>"><button class="postbtn">Delete post</button></form>
     </div>
     <%}%>
     <div class="contact">
@@ -30,14 +33,11 @@
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-x-twitter"></i>
         <i class="fa-brands fa-linkedin"></i>
-
     </div>
     <footer>
         <div class="terms"><b>Support</b><br><br>Help Center<br><br><br> Terms of Use</div>
         <div class="policy"><b>Community</b><br><br>BlogApp <br><br><br>Privacy Policy</div>
         <div class="developer"><b>Developer</b><br><br> BlogApp <br><br><br> &copy;2024 BlogApp</div>
     </footer>
-
-
 </body>
 </html>

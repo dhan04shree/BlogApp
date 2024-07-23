@@ -31,7 +31,7 @@ nav a{
     color:#000;
     font-size: 19px;
 }
-.box{
+.signbox{
     background-color:#9de2e2;
     border:1px solid #72a2a2;
     width: 400px;
@@ -41,54 +41,48 @@ nav a{
     border-radius: 10px;
     text-align: center;
 }
-h2,.box p,input,.signupbtn,textarea{
+.signbox a{
+    text-decoration: none;
+}
+.signbox a:hover{
+    text-decoration: underline;
+}
+h2,.signbox p,input,.signbtn,textarea{
     width: 80%;
     height: 30px;
     margin: 5px 35px;
     font-size: 17px;
-    text-align:center;
+    text-align:center;   
 }
-.signupbtn{background-color:darkslategray;
-    color: #ffffffeb;
-    cursor: pointer;}
+textarea{
+    height: auto;
+}
+.signbtn{
+    padding-bottom: 30px;
+}
 h2{
     padding-top:50px;
     padding-bottom: 20px;
     font-size: 30px;
 }
-.box a{
-    text-decoration: none;
-}
-.box a:hover{
-    text-decoration: underline;
-}
+
 .homesec1{
     padding-top: 250px;
     line-height: 50px;
     margin-bottom: 200px;
 }
-.sec1btn{
-    border-style: none; 
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #3e6969;
-    color: white;
-    cursor: pointer;
-    font-size: 17px;
+.homesec1 h1{
+    font-size: 40px;
 }
-.sec1btn:hover{
+.sec1btn{
+    padding: 10px;
+}
+button:hover{
     background-color:darkslategrey;
 }
-.editbtn:hover{
-    background-color: darkslategray;
-    color: white;
-}
-.editbtn,nav button{
-    border-radius: 5px;
-    border: 1px solid darkslategray;
+.postbtn,nav button{
     font-size: 15px;
     padding: 5px;
-    cursor: pointer;
 }
 .showblog{
     text-align: start;
@@ -106,6 +100,23 @@ h2{
 .showblog form{
     display:inline;
 }
+
+.createbox{
+    margin-top: 50px;
+}
+.createbox h1{
+    padding:20px 0 20px 0;
+}
+button{
+    background-color:#3e6969;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 8px 30px;
+    font-size: 17px;
+    border: 1px solid darkslategray;
+}
+
 footer{
     height: 200px;
     background-color:#333;

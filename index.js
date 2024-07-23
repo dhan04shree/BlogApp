@@ -14,22 +14,30 @@ const connection = mysql.createConnection({
   host : 'localhost',
   user:'root',
   database: 'BlogDB',
-  password:'Password' //Enter your MySQL password
+  password:'Shree123dha@Qn' //Enter your MySQL password
 });
-//show route (Home)
+//Show route
 app.get("/",(req,res)=>{
   let q = `SELECT * FROM posts`;
   try{
-    connection.query(q,(err,users)=>{
+    connection.query(q,(err,posts)=>{
       if(err)throw err
-      res.render("home.ejs",{users});
+      let q2 = `SELECT id,username FROM user`;
+      try{
+        connection.query(q2,(err,users)=>{
+          if(err)throw err
+          res.render("home.ejs",{posts,users});
+        });
+      }catch (err){
+        res.send("some error in DB");
+      }
     });
   }catch (err){
     res.send("some error in DB");
   }
 });
 
-//register route (Add new accout) 
+//register route (Add new account) 
 
 app.get("/register",(req,res)=>{
   res.render("signup.ejs");
@@ -116,7 +124,6 @@ app.post("/create/:id",(req,res)=>{
     res.send("some error in DB");
   }
 });
-
 //edit route
 app.patch("/edit/:id",(req,res)=>{
   let {id} = req.params;

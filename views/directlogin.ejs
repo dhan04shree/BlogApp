@@ -1,51 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlogApp</title>
-    <style>
-        .box{
-            background-color:#9de2e2;
-            border:1px solid #72a2a2;
-            width: 400px;
-            height: 400px;
-            margin: auto;
-            margin-top:160px;
-            border-radius: 10px;
-            text-align: center;
-        }
-        h2,.box p,input,.loginbtn,textarea{
-            width: 80%;
-            height: 30px;
-            margin: 5px 35px;
-            font-size: 17px;
-            text-align:center;
-        }
-        .loginbtn{
-            background-color:darkslategray;
-            color: #ffffffeb;
-            cursor: pointer;}
-        h2{
-            padding-top:50px;
-            padding-bottom: 20px;
-            font-size: 30px;
-        }
-        .box a{
-            text-decoration: none;
-        }
-        .box a:hover{
-            text-decoration: underline;
-        }
-   </style>
+<%-include("includes/head.ejs");%>
 </head>
 <body>
-    <form  class="box" method="post" action="/signin/<%=key%>/<%=id%>">
+    <form  class="signbox" method="post" action="/signin/<%=key%>/<%=id%>">
         <h2>Login</h2>
         <input type="email" name="email" placeholder="Enter email" required>
         <input type="password" name="password" placeholder="Enter password" required>
-        <button class="loginbtn">Login</button><br><br>
+        <button class="signbtn">Login</button><br><br>
         <p>Don't have an account? <a href="/register">SignUp</a></p>
     </form>
 </body>

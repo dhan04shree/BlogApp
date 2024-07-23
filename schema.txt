@@ -18,3 +18,4 @@ heading VARCHAR(50),
 user_id VARCHAR(50),
 FOREIGN KEY (user_id) REFERENCES user(id)
 );
+
