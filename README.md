@@ -17,6 +17,44 @@ Backend - NodeJs , ExpressJs
 Database - MySQL
 
 
+
+## Installation
+
+1.Pre-requisites
+- Node.Js and MySQL installed on your system.
+
+2.Clone the repository
+
+```bash
+git clone https://github.com/dhan04shree/BlogApp.git
+```
+3.Navigate to the project directory
+
+```bash
+cd BlogApp
+```
+
+4.Install required packages 
+```bash
+npm init -y
+npm install express
+npm i ejs
+npm i mysql2
+npm i uuid
+npm i method-override
+```
+5.Initialize the database
+
+Open schema.txt file and follow the instructions
+
+6.Start the server
+```bash
+node index.js
+```
+7.Open your browser and make the request
+```bash
+localhost:8080/
+```
 ## Screenshots
 
 HOMEPAGE :
@@ -50,52 +88,4 @@ Post data store in "posts" table of database
 
 ![23 07 2024_19 53 47_REC](https://github.com/user-attachments/assets/feaad1b7-78a1-44a4-bdd5-c3faaf523b7e)
 
-
-## Installation
-
-1.Pre-requisites
-- Node.Js and MySQL installed on your system.
-
-2.Clone the repository
-
-```bash
-git clone https://github.com/dhan04shree/Blog-Website.git
-```
-3.Navigate to the project directory
-
-```bash
-cd Blog-Website
-```
-
-4.Install Dependencies
-```bash
-npm init -y
-```
-```bash
-npm install express
-```
-```bash
-npm i ejs
-```
-```bash
-npm i mysql2
-```
-```bash
-npm i uuid
-```
-```bash
-npm i method-override
-```
-5.Initialize the database
-
-Open schema.txt file and follow the instructions
-
-6.Start the server
-```bash
-node index.js
-```
-7.Open your browser and make the request
-```bash
-localhost:8080/
-```
 
