@@ -1,8 +1,11 @@
 
-# BlogWebsite
+# BlogApp - A full stack web application
+An ultimate platform where users can share their articles and read others .
 
-BlogWebsite is a full-stack web application for blogs, that allows users to create, read, update, and delete (CRUD) blog posts. with a features of login and signup.
+# Key features
 
+- Implemented CRUD operations to blogs.
+- Personalized Experience : While any updation of blogs login and signup developed from scratch much similar to authentication and authorization.
 
 
 ## Tech Stack
@@ -32,7 +35,7 @@ LOGIN:
 
 ![23 07 2024_20 11 51_REC](https://github.com/user-attachments/assets/6331d82c-1d95-448f-94bc-d02dcd46453b)
 
-Before post edit and delete ,login details of user is verified.
+Before post edit and delete ,login details of user verified.
 
 ![23 07 2024_20 00 39_REC](https://github.com/user-attachments/assets/56b3f4ae-2be1-46f6-82c0-81dee9d5d95e)
 
