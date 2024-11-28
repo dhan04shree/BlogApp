@@ -36,12 +36,7 @@ cd BlogApp
 
 4.Install required packages 
 ```bash
-npm init -y
-npm install express
-npm i ejs
-npm i mysql2
-npm i uuid
-npm i method-override
+npm install
 ```
 5.Initialize the database
 
