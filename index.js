@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
   host : 'localhost',
   user:'root',
   database: 'BlogDB',
-  password:'Shree123dha@Qn' //Enter your MySQL password
+  password:'password' //Enter your MySQL password
 });
 //Show route
 app.get("/",(req,res)=>{
