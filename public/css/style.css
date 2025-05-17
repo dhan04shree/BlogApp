@@ -34,11 +34,11 @@ nav a{
 .signbox{
     background-color:#9de2e2;
     border:1px solid #72a2a2;
-    width: 400px;
+    width: 338px;
     height: 400px;
+    border-radius: 10px;
     margin: auto;
     margin-top:160px;
-    border-radius: 10px;
     text-align: center;
 }
 .signbox a{
@@ -87,7 +87,7 @@ button:hover{
 .showblog{
     text-align: start;
     background-color:#9de2e2;
-    margin: 60px 120px;
+    margin: 60px 38px;
     border:1px solid #72a2a2;
     border-radius: 8px;
     padding: 10px 20px;
@@ -134,7 +134,3 @@ footer{
     font-size:29px;
     margin: 30px 30px 100px 30px;
 }
-
-
-
-

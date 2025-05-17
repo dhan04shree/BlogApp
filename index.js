@@ -2,19 +2,26 @@ const express = require("express");
 const mysql = require('mysql2');
 const app = express();
 const path = require("path");
+
+require("dotenv").config()
+
 app.set("view engine","ejs");
+
 app.set("views",path.join(__dirname,"/views"));
+
 const methodOverride = require("method-override");
 app.use(methodOverride("_method"));
+
 const { v4: uuidv4 } = require('uuid');
+
 app.use(express.static(path.join(__dirname,"/public/css")));
 app.use(express.urlencoded({extended:true}));
 
 const connection = mysql.createConnection({
-  host : 'localhost',
-  user:'root',
-  database: 'BlogDB',
-  password:'password' //Enter your MySQL password
+  host : process.env.DB_HOST,
+  user:process.env.DB_USER,
+  database: process.env.DB_NAME,
+  password:process.env.DB_PASSWORD //Enter your MySQL password
 });
 //Show route
 app.get("/",(req,res)=>{
@@ -88,9 +95,9 @@ app.post("/signin/:key/:id",(req,res)=>{
               if(err2)throw err2;
               let postuser = result[0];
               if(user.id != id){
-                res.send("Changes can be made only by owner account!")}
+                res.send("<h1>Changes can be made only by owner account!</h1>")}
               else if(postuser == undefined){
-                res.send("Post data is empty.Create your 1st blog");}
+                res.send("<h1>No blog posts available. Start by creating your first post to share your thoughts with the world.</h1>");}
               else{
                 if (key =="edit") res.render("edit.ejs",{postuser});
                 else if (key =="delete") res.render("delete.ejs",{postuser});
@@ -101,7 +108,7 @@ app.post("/signin/:key/:id",(req,res)=>{
             }
           }
         }else if(Error)throw error;
-      }catch(error){res.send("WRONG EMAIL OR PASSWORD");}
+      }catch(error){res.send("<h1>WRONG EMAIL OR PASSWORD</h1>");}
     });
   }catch(err1){
     res.send("some error in DB err1");
