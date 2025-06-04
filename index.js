@@ -160,6 +160,6 @@ app.delete("/delete/:id",(req,res)=>{
         res.send("some error in DB");
       }   
 });
-app.listen("8080",()=>{
+app.listen(process.env.PORT,()=>{
   console.log("server listening to port 8080");
 });
