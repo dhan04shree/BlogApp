@@ -18,10 +18,11 @@ app.use(express.static(path.join(__dirname,"/public/css")));
 app.use(express.urlencoded({extended:true}));
 
 const connection = mysql.createConnection({
-  host : process.env.DB_HOST,
-  user:process.env.DB_USER,
-  database: process.env.DB_NAME,
-  password:process.env.DB_PASSWORD //Enter your MySQL password
+  host: process.env.MYSQLHOST,
+  port: process.env.MYSQLPORT,
+  user: process.env.MYSQLUSER,
+  password: process.env.MYSQLPASSWORD,
+  database: process.env.MYSQLDATABASE,
 });
 //Show route
 app.get("/",(req,res)=>{
